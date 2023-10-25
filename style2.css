@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*.....Scroll Bar....*/
+::-webkit-scrollbar{
+    width:8px;
+    background:rgb(107, 104, 105);
+  }
+  ::-webkit-scrollbar-thumb{
+    width:100%;
+    background:rgb(253, 187, 101);
+    border-radius:2em;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background:rgb(255, 145, 2);
+  }
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+/*Navigation bar*/
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 10px;
+    background-color: #24262c;
+}
+.logo a
+{
+    text-decoration: none;
+    color: coral;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+    padding-top: 6px;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+    
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: coral;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+.navbar i:hover{
+    color: rgb(255, 255, 255);
+}
+nav ul li button
+{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: 2px solid black;
+    border-radius: 60px;
+    padding: .5rem;
+    background: crimson;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul li button:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border: 2px solid rgba(250, 143, 55, 0.801);
+}
+
+
+/*Homepage section*/
+.cover{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    background: url(fashion1.jpg);
+    background-size: cover;
+    top: 70px;
+}
+.text{
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+h2{
+    font-size:40px;
+    font-family: barlow condensed,sans-serif;
+    text-transform: capitalize;
+    width:400px;
+    color: #bbbbbb;
+    font-weight: normal;
+}
+h3{
+    position: absolute;
+    top: -30%;
+    font-size: 17px;
+    font-family: barlow condensed,sans-serif;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+form input[type="submit"]{
+    position: absolute;
+    top: 120%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: crimson;
+    border: none;
+    color: white;
+    font-family: barlow condensed,sans-serif;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover{
+    background-color: red;
+}
+
+
+/*Profile section*/
+.about{
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+}
+.about-us{
+    width: 80%;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 10%;
+}
+.about-us p{
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: black;
+    font-weight: normal;
+    text-align: center;
+}
+.about-me{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap:20%;
+}
+.getto{
+    width: 37%;
+}
+.getto h5{
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.getto p{
+    margin-top: 10px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-family: poppins;
+    font-weight: lighter;
+}
+.pic{
+    width: 50%;
+    background: url(pic.jpg);
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+
+/*Footer*/
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    position: relative;
+    padding:30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
